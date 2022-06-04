@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 1.3rem;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 550px;
+    width:90%;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: hsl(10, 79%, 65%);
+}
+
+.head-left {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    flex-direction: column;
+}
+
+.head-balance {
+    color: white;
+    opacity: 0.9;
+}
+
+.head-money {
+    color: white;
+    font-size: 28px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.logo {
+    width: 84px;
+}
+
+.main {
+    background-color: white;
+    max-width: 550px;
+    width:90%;
+    height: 500px;
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.main-heading {
+    font-size: 34px;
+    color: hsl(25, 47%, 15%);
+}
+
+.day{
+    color:hsl(28, 10%, 53%);
+    
+}
+
+.graph{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    padding-top: 75px;
+    border-bottom: 2px solid hsl(30, 54%, 91%)  ;
+    opacity:1.5;
+    width:100%;
+}
+.gr{
+    width:50px;
+    border-radius:5px;
+    position:relative;  
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+    transition: opacity 0.3s;
+    width:100%;
+}
+.gr:hover {
+    
+    opacity:0.6;
+}
+.hover-text{
+    width:80px;
+    background-color:hsl(25, 47%, 15%);
+    text-align:center;
+    border-radius:6px;
+    padding:5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    margin-bottom:8px;
+    left: 50%;
+    margin-left: -41px;
+    color:white;
+    opacity: 0;
+    transition: opacity, all 0.3s;
+}
+.show-hover-text{
+    visibility:visible; 
+    opacity:1;
+}
+
+.mong{
+    background-color: hsl(10, 79%, 65%);
+    height:50px;
+}
+.tueg{
+    background-color:hsl(10, 79%, 65%);
+    height:100px;
+}
+.wedg{
+    background-color:hsl(186, 34%, 60%);
+    height:145px;   
+}
+.thug{
+    background-color:hsl(10, 79%, 65%);
+    height:85px;
+}
+.frig{
+    background-color: hsl(10, 79%, 65%);
+    height:65px;
+}
+.satg{
+    background-color: hsl(10, 79%, 65%);
+    height: 120px;
+}
+.sung{
+    background-color: hsl(10, 79%, 65%);
+    height: 70px;
+}
+.eachgraph{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    padding-bottom:30px;
+    position:relative;
+    width:10%;
+    
+}
+
+.lower{
+    display:flex;
+    justify-content:space-between;
+}
+.lower-left{
+    display:flex;
+    flex-direction:column;
+    gap:0.2rem;
+    padding-top:30px;
+}
+.lower-left-text{
+    color:hsl(28, 10%, 53%);
+}
+.lower-left-money{
+    color:hsl(25, 47%, 15%);
+    font-size:42px;
+
+}
+.lower-right{
+    display:flex;
+    flex-direction:column;
+    padding:50px;
+    align-items:flex-end;
+    padding-right: 0px;
+}
+.percent{
+    color:hsl(25, 47%, 15%);
+}
+.lower-right-text{
+    color:hsl(28, 10%, 53%);
+}
+
+/* Responsiveness */
+@media screen and (max-width:550px) {
+    .show-hover-text{
+        display:none;
+    }
+    .lower-left-money{
+        font-size:32px;
+    }
+    .lower-left-text{
+        font-size:14px;
+    }
+    .percent{
+        font-size:14px;
+    }
+    .lower-right-text{
+        font-size:10px;
+    }
+    .main-heading{
+        font-size:26px;
+    }
+    .day{
+        font-size:14px;
+    }
+}
